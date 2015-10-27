@@ -3,17 +3,17 @@ var webpack = require('webpack');
 
 var config = {
   entry: [
-    path.resolve(__dirname, 'src/main.js')
+    path.resolve(__dirname, '../src/main.js')
   ],
   output: {
-    path: path.resolve(__dirname, 'build'),
+    path: path.resolve(__dirname, '../build'),
     filename: 'bundle.js'
   },
   module: {
     loaders: [{
       test: /\.js?$/,
       loader: 'react-hot!babel-loader?stage=0',
-      include: path.join(__dirname, 'src')
+      include: path.join(__dirname, '../src')
     },
     {
       test: /\.css$/,

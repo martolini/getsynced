@@ -5,11 +5,17 @@ import bodyParser from 'body-parser';
 import Parse from 'parse';
 import request from 'superagent';
 
+let DEBUG = process.env.NODE_ENV === 'development';
+let indexFile = DEBUG ? 'static/index.dev.html' : 'static/index.html';
+
 let app = express();
 
 app.set('port', (process.env.PORT || 5000));
 
 let server = app.listen(app.get('port'), () => {
+  if (DEBUG) {
+    console.log('## Development mode ##');
+  }
   console.log('Listening on port: ' + app.get('port'));
 });
 
@@ -56,5 +62,5 @@ app.post('/webhooks/slack/test/', async (req, res) => {;
 });
 
 app.get('*', async (req, res, next) => {
-  res.sendFile(path.join(__dirname, 'static/index.html'));
+  res.sendFile(path.join(__dirname, indexFile));
 });

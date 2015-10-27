@@ -8,9 +8,9 @@ const Navbar = React.createClass({
 
   renderLoggedin() {
     let logoLink = <Link className="navbar-brand" to="/">getsynced.io</Link>;
-    if (!!this.props.user.team) {
-      logoLink = <Link className="navbar-brand" to="/team/">{ this.props.user.team.name }</Link>;
-    }
+    // if (!!this.props.user.team) {
+    //   logoLink = <Link className="navbar-brand" to="/team/">{ this.props.user.team.name }</Link>;
+    // }
     return (
       <nav className="navbar navbar-inverse">
         <div className="container">

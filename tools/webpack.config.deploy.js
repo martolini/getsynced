@@ -3,17 +3,17 @@ var webpack = require('webpack');
 
 var config = {
   entry: [
-    path.resolve(__dirname, 'src/main.js')
+    path.resolve(__dirname, '../src/main.js')
   ],
   output: {
-    path: path.resolve(__dirname, 'static'),
-    filename: 'bundle.js'
+    path: path.resolve(__dirname, '../cloudcode/public'),
+    filename: 'bundle.min.js'
   },
   module: {
     loaders: [{
       test: /\.js?$/,
       loader: 'babel-loader?stage=0',
-      include: path.join(__dirname, 'src')
+      include: path.join(__dirname, '../src')
     },
     {
       test: /\.css$/,
