@@ -1,0 +1,32 @@
+body {
+  font-size: 1.7rem;
+  background-color: #f9f9f9;
+}
+
+a.active {
+  color: #ffffff !important;
+  background-color: #0c7cd5 !important;
+}
+
+.setup-image {
+  -webkit-box-shadow: 5px 5px 20px 2px rgba(136,136,136,1);
+  -moz-box-shadow: 5px 5px 20px 2px rgba(136,136,136,1);
+  box-shadow: 5px 5px 20px 2px rgba(136,136,136,1);
+}
+
+section {
+  padding-top: 60px;
+}
+
+.panel-article {
+  padding: 15px 60px 60px 60px;
+}
+
+article {
+  padding-top: 40px;
+}
+
+hr {
+  margin-top: 70px;
+  width: 30%;
+}

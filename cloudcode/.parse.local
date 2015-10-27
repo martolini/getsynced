@@ -1,0 +1,10 @@
+{
+  "applications": {
+    "_default": {
+      "link": "getsynced"
+    },
+    "getsynced": {
+      "applicationId": "zWhFlbtIW0oiQLjKsz8cEhUmn53pM789e0G9Sky3"
+    }
+  }
+}
